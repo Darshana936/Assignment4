@@ -1,0 +1,43 @@
+.AddHeader{
+    height: 60px;
+    background-color: crimson;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.AddContainer{
+   height: 200px;
+   width: 80%;
+   border: 1px solid gray;
+   margin-top: 90px;
+   margin-right: auto;
+   margin-left: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+.form-group{
+    margin-bottom: 20px;
+    color: rgb(34, 29, 29); 
+}
+.form-control{
+    margin-top: 5px;
+    width: 300px;
+    height: 25px;
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(34, 29, 29);
+    font-size: larger;
+    display: block;
+    margin: auto;
+
+}
