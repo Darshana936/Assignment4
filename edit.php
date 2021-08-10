@@ -1,25 +1,25 @@
-
 <?php
 require 'db.php';
 $id = $_GET['id'];
 $sql = 'SELECT * FROM category WHERE ID=:id';
 $statement = $conn->prepare($sql);
-$statement->execute([':id' => $id ]);
+$statement->execute([':id' => $id]);
 $catname = $statement->fetch(PDO::FETCH_OBJ);
-if (isset ($_POST['name']) ) {
-  $name = $_POST['name'];
- 
-  $sql = 'UPDATE category SET NAME=:name WHERE ID=:id';
-  $statement = $conn->prepare($sql);
-  if($statement->execute([':name' => $name, ':id' => $id])){
-      header("location:list.php");
-  }
-} 
-  ?>
+if (isset($_POST['name'])) {
+    $name = $_POST['name'];
+
+    $sql = 'UPDATE category SET NAME=:name WHERE ID=:id';
+    $statement = $conn->prepare($sql);
+    if ($statement->execute([':name' => $name, ':id' => $id])) {
+        header("location:list.php");
+    }
+}
+?>
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,20 +27,23 @@ if (isset ($_POST['name']) ) {
     <title>CRUD Operation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   
-       <div class="AddHeader">
-           <h1 class="AddHead">Manage Category</h1>
-       </div>
-<div class="AddContainer">
-       <form method="post">
-           <div class="form-group">
-               <label for="InputCategory">Category Name</label><br>
-               <input type="text" value="<?=$catname->NAME;?>" name="name" class="form-control" id="InputCategory">
-           </div><hr>
-           <button type="submit" class="btn" name="submit">Submit</button>
-       </form>
-   </div>
+
+    <div class="AddHeader">
+        <h1 class="AddHead">Manage Category</h1>
+    </div>
+    <div class="AddContainer">
+        <form method="post">
+            <div class="form-group">
+                <label for="InputCategory">Category Name</label><br>
+                <input type="text" value="<?= $catname->NAME; ?>" name="name" class="form-control" id="InputCategory">
+            </div>
+            <hr>
+            <button type="submit" class="btn" name="submit">Submit</button>
+        </form>
+    </div>
     </div>
 </body>
+
 </html>
