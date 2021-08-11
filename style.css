@@ -89,9 +89,15 @@ table, td, th{
     padding: 5px;
     margin: 1px;
 }
+
+
 .btn-info{
     background-color: crimson;
     
+}
+.btn-info:hover, .btn-danger:hover, .btn:hover, .container .btn-top .btn-create:hover{
+    background-color:darksalmon;
+    color: black;
 }
 .btn-danger{
     background-color: blue;

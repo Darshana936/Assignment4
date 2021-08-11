@@ -40,7 +40,7 @@ if (isset($_POST['name'])) {
                 <span id="err1"></span>
             </div>
             <hr>
-            <button type="submit" class="btn" name="submit" >Submit</button>
+            <button type="submit" class="btn" name="submit">Submit</button>
         </form>
     </div>
     </div>

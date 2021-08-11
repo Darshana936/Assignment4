@@ -1,3 +1,5 @@
+
+/*Form validation start*/
 let nameNode=document.getElementById("InputCategory");
 let errNode1=document.getElementById("err1");
 
@@ -25,5 +27,9 @@ function validate1(){
     else
         return true;
 }
+
+
+/*form validation end*/
+
 
 
