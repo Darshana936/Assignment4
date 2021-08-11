@@ -33,16 +33,18 @@ if (isset($_POST['name'])) {
         <h1 class="AddHead">Create Category</h1>
     </div>
     <div class="AddContainer">
-        <form method="post">
+        <form method="post" onsubmit="return validate1()">
             <div class="form-group">
                 <label for="InputCategory">Category Name</label><br>
-                <input type="text" name="name" class="form-control" id="InputCategory">
+                <input type="text" name="name" class="form-control" id="InputCategory" ><br>
+                <span id="err1"></span>
             </div>
             <hr>
-            <button type="submit" class="btn" name="submit">Submit</button>
+            <button type="submit" class="btn" name="submit" >Submit</button>
         </form>
     </div>
     </div>
+    <script src="myjs.js"></script>
 </body>
 
 </html>
