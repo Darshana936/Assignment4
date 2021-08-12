@@ -15,7 +15,7 @@ function validate1(){
     }
     else if(!regName.test(name)){
         errNode1.style.color="red";
-        errNode1.innerHTML="<b>You can only use alphabet</b>";
+        errNode1.innerHTML="<b>You can only use alphabets</b>";
   
         return false;
     }
