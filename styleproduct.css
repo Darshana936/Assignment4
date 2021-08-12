@@ -1,0 +1,114 @@
+.AddHeader{
+    height: 60px;
+    background-color: crimson;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.AddContainer{
+   height: 400px;
+   width: 80%;
+   border: 1px solid gray;
+   margin-top: 90px;
+   margin-right: auto;
+   margin-left: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+#file{
+    border: 1px solid gray;
+    height: 31px;
+    margin-top: 5px;
+}
+
+.form-group{
+    margin-bottom: 15px;
+    color: rgb(34, 29, 29); 
+}
+.row{
+    margin:4px;
+    height: 70px;
+}
+.form-control{
+    width: 300px;
+    height: 30px;
+    margin-top: 5px;
+}
+.btn{
+    height: 40px;
+    width: 150px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    border: 2px solid rgb(34, 29, 29);
+    font-size: larger;
+    display: block;
+    margin: auto;
+
+}
+
+/*List category style start*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .btn-top{
+  margin-top: 80px;
+}
+.container .btn-top .btn-create{
+    height: 35px;
+    width: 120px;
+    background-color: crimson;
+    color: honeydew ;
+    border: 2px solid black;
+    padding: 5px;
+    cursor: pointer;
+    position: fixed;
+    right: 150px;
+}
+
+
+.container .table-body{
+    margin-top: 50px
+}
+.table{
+    height: fit-content;
+    width: 900px;
+    text-align: left;
+}
+td, th{
+    height: 30px;
+}
+table, td, th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.bt{
+    text-decoration: none;
+    height: 25px;
+    width: fit-content;
+    color: honeydew;
+    padding: 5px;
+    margin: 1px;
+}
+
+
+.btn-info{
+    background-color: crimson;
+    
+}
+.btn-info:hover, .btn-danger:hover, .btn:hover, .container .btn-top .btn-create:hover{
+    background-color:darksalmon;
+    color: black;
+}
+.btn-danger{
+    background-color: blue;
+}
