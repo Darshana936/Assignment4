@@ -27,11 +27,11 @@ $statement->execute();
 
     <div class="container">
         <div class="btn-top">
-            <a href="createProduct.php"><input type="button" class="btn-create" value="Create Category"></a>
+            <a href="createProduct.php"><input type="button" class="btn-create" value="Create Product"></a>
         </div>
         <div class="table-body">
             <table class="table">
-            
+
                 <tr>
                     <th>ID</th>
                     <th>PRODUCT NAME</th>
@@ -40,15 +40,15 @@ $statement->execute();
                     <th>PRODUCT CATEGORY</th>
                     <th>PRODUCT ACTION</th>
                 </tr>
-            
+
                 <?php while ($row = $statement->fetch()) {
                     echo "<tr>";
                     echo "<td>" . $row['id'] . "</td>";
                     echo "<td>" . $row['name'] . "</td>";
-                    
+
                     echo "<td>" . $row['price'] . "</td>";
-                 
-                    echo '<td> <img src="'. $row['image'] .'" width="50" height="50">'."</td>";
+
+                    echo '<td> <img src="' . $row['image'] . '" width="70" height="70">' . "</td>";
                     echo "<td>" . $row['select_opt'] . "</td>";
                     echo "<td>";
                     echo '<a href="editproduct.php?id=' . $row['id'] . '" class="btn-info bt">Edit</a>';
@@ -57,7 +57,7 @@ $statement->execute();
                     echo "</tr>";
                 }
                 ?>
-           
+
             </table>
         </div>
 
